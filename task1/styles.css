@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  header {
+    background-color: #000;
+    padding: 20px;
+    color: #f2eeee;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 150px ;
+  }
+  
+  .navigation-links li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .navigation-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .profile img {
+    width: 100px;
+    border-radius: 120%;
+  }
+  
+  /* Hero section */
+  .hero {
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .cta-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f3303a;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 30px;
+  }
+  
+  /* Featured section */
+  .featured {
+    background-color: #060606;
+    color: #fff;
+    padding: 30px;
+  }
+  
+  .featured h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .featured-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  .movie-item {
+    position: relative;
+    height: 0;
+    padding-bottom: 150%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .movie-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .movie-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .movie-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .movie-item .overlay h3 {
+    font-size: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    padding: 20px;
+    color: #999;
+  }
+  
+  .footer-links ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links li a {
+    color: #9b9999;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+  }
